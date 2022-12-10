@@ -1,0 +1,64 @@
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  
+  .row.content {
+    height: 450px
+  }
+  
+  .sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+  }
+  
+  footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: grey;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+  
+    .row.content {
+      height: auto;
+    }
+  }
+  
+  .card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  
+  #page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;
+  }
+  
+  img {
+    border-radius: 10px;
+    padding: 10px 10px 0px 10px;
+  }

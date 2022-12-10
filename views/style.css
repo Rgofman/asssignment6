@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background: rgb(181, 47, 106);
+    background: radial-gradient(circle, rgba(181, 47, 106, 1) 0%, rgba(45, 78, 167, 1) 100%);
+}
+
+.login {
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: min-content;
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.g {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.login form {
+    font-size: 15px;
+}
+
+.login form .form-group {
+    margin-bottom: 12px;
+}
+
+.login form input[type="submit"] {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+
+
+@media (min-width: 1025px) {
+    .h-custom {
+        height: 100vh !important;
+    }
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+}
+
+.card-registration .select-arrow {
+    top: 13px;
+}
+
+.gradient-custom-2 {
+    background: #a1c4fd;
+    background: -webkit-linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1));
+    background: linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1))
+}
+
+.bg-indigo {
+    background-color: #4835d4;
+}
+
+@media (min-width: 992px) {
+    .card-registration-2 .bg-indigo {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .card-registration-2 .bg-indigo {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}
+
+.h3 {
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.z {
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    width: 98%;
+    transform: translate(-50%, -50%);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding-right: 50px;
+
+    z-index: 10000;
+
+
+}
+
+.j {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    padding: 10px;
+}
+
+#footer {
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: grey;
+}

@@ -1,0 +1,167 @@
+
+<title>Registration</title>
+
+<section class="g">
+  <form action="/registration" method="post" enctype="application/x-www-form-urlencoded">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12">
+        <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+          <div class="card-body p-0">
+            <div class="row g-0">
+              <div class="col-lg-6">
+                <div class="p-5">
+                  <h3 class="fw-normal mb-5" style="color: #4835d4;">Personal Infomation</h3>
+                  <hr size="20">
+                  <div class="row">
+                    <div class="col-md-6 mb-4 pb-2">
+                      <div class="form-outline">
+                        <input type="text" id="name" name = "name" placeholder="First name"
+                          class="form-control form-control-lg" />
+                          {{#if data.errorMsg.name}}
+                            <div class="alert alert-danger" style ="height: 50px; margin-top: 8px; font-size: 15px;"> 
+                                {{data.errorMsg.name}}  
+                            </div>
+                        {{/if}}
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4 pb-2">
+                      <div class="form-outline">
+                        <input type="text" id="lname" name = "lname" placeholder="Last name" 
+                          class="form-control form-control-lg" />
+                          {{#if data.errorMsg.lname}}
+                            <div class="alert alert-danger" style ="height: 50px; margin-top: 8px; font-size: 15px;"> 
+                                {{data.errorMsg.lname}}  
+                            </div>
+                        {{/if}}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4 pb-2">
+                      <div class="form-outline">
+                        <input type="text" id="email" name = "email" placeholder="Email" 
+                          class="form-control form-control-lg" />
+                          {{#if data.errorMsg.email}}
+                            <div class="alert alert-danger" style ="height: 50px; margin-top: 8px; font-size: 15px;"> 
+                                {{data.errorMsg.email}}  
+                            </div>
+                        {{/if}}
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4 pb-2">
+                      <div class="form-outline form-white">
+                        <input type="text" id="phone" name = "phone" placeholder="Phone Number"
+                          class="form-control form-control-lg" />
+                          {{#if data.errorMsg.phone}}
+                            <div class="alert alert-danger" style ="height: 50px; margin-top: 8px; font-size: 15px;"> 
+                                {{data.errorMsg.phone}}  
+                            </div>
+                        {{/if}}
+                      </div>
+                    </div>
+                  </div>
+
+                  <h3 class="fw-normal mb-5" style="color: #4835d4;">Account Security</h3>
+                  <hr size="20">
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4 pb-2">
+                      <div class="form-outline">
+                        <input type="password" id="password" name="password" placeholder="Create Password"class="form-control form-control-lg" />
+
+                        {{#if data.errorMsg.password}}
+                            <div class="alert alert-danger" style ="height: 50px; margin-top: 8px; font-size: 15px;"> 
+                                {{data.errorMsg.password}}  
+                            </div>
+                        {{/if}}
+                        
+                      </div>
+                    </div>
+
+
+
+                    <div class="col-md-6 mb-4 pb-2">
+                      <div class="form-outline">
+                        <input type="password" id="comfPassword" name="comfPassword" placeholder="Confirm Password"
+                          class="form-control form-control-lg" />
+                          {{#if data.errorMsg.comfPassword}}
+                            <div class="alert alert-danger" style ="height: 50px; margin-top: 8px; font-size: 15px;"> 
+                                {{data.errorMsg.comfPassword}}  
+                            </div>
+                        {{/if}}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 bg-indigo text-white">
+                <div class="p-5">
+                  <h3 class="fw-normal mb-5">Billing Address</h3>
+                  <hr size="20">
+                  <div class="mb-4 pb-2">
+                    <div class="form-outline form-white">
+                      <input type="text" id="form3Examplea2" placeholder="Company"
+                        class="form-control form-control-lg" />
+                    </div>
+                  </div>
+
+                  <div class="mb-4 pb-2">
+                    <div class="form-outline form-white">
+                      <input type="text" id="form3Examplea3" placeholder="Street Address"
+                        class="form-control form-control-lg" />
+                    </div>
+                  </div>
+
+                  <div class="mb-4">
+                    <div class="form-outline form-white">
+                      <input type="text" id="form3Examplea9" placeholder="Street Address 2"
+                        class="form-control form-control-lg" />
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4 pb-2">
+                      <div class="form-outline form-white">
+                        <input type="text" id="form3Examplea4" placeholder="Postal Code"
+                          class="form-control form-control-lg" />
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4 pb-2">
+                      <div class="form-outline form-white">
+                        <input type="text" id="form3Examplea5" placeholder="City"
+                          class="form-control form-control-lg" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4 pb-2">
+                      <div class="form-outline form-white">
+                        <input type="text" id="form3Examplea4" placeholder="Province"
+                          class="form-control form-control-lg" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4 pb-2">
+                      <div class="form-outline form-white">
+                        <input type="text" id="form3Examplea5" placeholder="Country"
+                          class="form-control form-control-lg" />
+                      </div>
+                    </div>
+                  </div>
+                    <input type="submit" style="color: #4835d4;" class="btn btn-light btn-lg" data-mdb-ripple-color="bg-light" name = "login" value = "Register">
+                  <a class="nav-link" href="./login"
+                    style="font-size: 15px; text-align: right; text-decoration: none">Log In?</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </form>
+</section>
+
